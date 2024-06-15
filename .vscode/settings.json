@@ -1,0 +1,6 @@
+{
+  "deno.enablePaths": [
+    "."
+  ],
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+}

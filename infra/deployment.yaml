@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: togeojson
+  namespace: pt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: togeojson
+  template:
+    metadata:
+      labels:
+        app: togeojson
+    spec:
+      containers:
+        - name: togeojson
+          image: ghcr.io/dzfranklin/togeojson-server:latest
+          ports:
+            - name: http
+              containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
