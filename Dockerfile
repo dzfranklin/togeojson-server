@@ -10,4 +10,4 @@ RUN deno cache deno.jsonc --no-check
 COPY . .
 RUN deno cache main.ts --no-check
 
-CMD ["run", "--allow-net", "--allow-read", "main.ts"]
+CMD ["run", "--allow-net", "--allow-env", "main.ts"]
