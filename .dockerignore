@@ -1,2 +1,6 @@
 .vscode
 sample.gpx
+.env
+.env.*
+*.local
+
