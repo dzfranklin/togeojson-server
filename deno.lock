@@ -3,9 +3,14 @@
   "packages": {
     "specifiers": {
       "npm:@tmcw/togeojson@5.8.1": "npm:@tmcw/togeojson@5.8.1_@types+geojson@7946.0.14",
-      "npm:@xmldom/xmldom@0.8.10": "npm:@xmldom/xmldom@0.8.10"
+      "npm:@xmldom/xmldom@0.8.10": "npm:@xmldom/xmldom@0.8.10",
+      "npm:prom-client@15.1.2": "npm:prom-client@15.1.2"
     },
     "npm": {
+      "@opentelemetry/api@1.8.0": {
+        "integrity": "sha512-I/s6F7yKUDdtMsoBWXJe8Qz40Tui5vsuKCWJEWVL+5q9sSWRzzx6v2KeNsOBEwd94j0eWkpWCH4yB6rZg9Mf0w==",
+        "dependencies": {}
+      },
       "@tmcw/togeojson@5.8.1_@types+geojson@7946.0.14": {
         "integrity": "sha512-2YNrbis3l5kS0XrYwiHEZcGwiRp0MJ5CvwGwtMWp2z2tsVlskeec2qgvKHnF0RCwI5GnjrrBOoKsWfndEnd3LA==",
         "dependencies": {
@@ -19,6 +24,23 @@
       "@xmldom/xmldom@0.8.10": {
         "integrity": "sha512-2WALfTl4xo2SkGCYRt6rDTFfk9R1czmBvUQy12gK2KuRKIpWEhcbbzy8EZXtz/jkRqHX8bFEc6FC1HjX4TUWYw==",
         "dependencies": {}
+      },
+      "bintrees@1.0.2": {
+        "integrity": "sha512-VOMgTMwjAaUG580SXn3LacVgjurrbMme7ZZNYGSSV7mmtY6QQRh0Eg3pwIcntQ77DErK1L0NxkbetjcoXzVwKw==",
+        "dependencies": {}
+      },
+      "prom-client@15.1.2": {
+        "integrity": "sha512-on3h1iXb04QFLLThrmVYg1SChBQ9N1c+nKAjebBjokBqipddH3uxmOUcEkTnzmJ8Jh/5TSUnUqS40i2QB2dJHQ==",
+        "dependencies": {
+          "@opentelemetry/api": "@opentelemetry/api@1.8.0",
+          "tdigest": "tdigest@0.1.2"
+        }
+      },
+      "tdigest@0.1.2": {
+        "integrity": "sha512-+G0LLgjjo9BZX2MfdvPfH+MKLCrxlXSYec5DaPYP1fe6Iyhf0/fSmJ0bFiZ1F8BT6cGXl2LpltQptzjXKWEkKA==",
+        "dependencies": {
+          "bintrees": "bintrees@1.0.2"
+        }
       }
     }
   },
